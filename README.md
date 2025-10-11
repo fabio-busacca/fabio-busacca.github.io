@@ -1,3 +1,3 @@
 # Personal Academic Website
-This repository hosts the personal academic website of Andrea Panebianco. 
-Visit it here: [https://andreapanebianco.github.io](https://andreapanebianco.github.io)
+This repository hosts the personal academic website of Fabio Busacca. 
+Visit it here: [https://fabio-busacca.github.io](https://fabio-busacca.github.io)
