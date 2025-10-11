@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Andrea Panebianco — Homepage</title>
+  <style>  
+    body { font-family: system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; background:#f9fafb; color:#111; }
+    header { display: flex; align-items: center; gap: 20px; margin-bottom: 2rem; }
+    header img { width: 140px; height: 140px; object-fit: cover; border-radius: 8px; border: 2px solid #ddd; }
+    h1 { font-size: 2.2rem; margin: 0 0 0.3rem 0; }
+    h2 { margin-top: 2rem; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.3rem; }
+    p { margin: 0.6rem 0; }
+    nav { margin-top: 0.5rem; }
+    nav a { margin-right: 15px; padding: 6px 12px; background: #2563eb; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 500; }
+    nav a:hover { background: #1e40af; }
+    .links { text-align: center; margin-top: 2rem; }
+    .links a { display: inline-block; margin: 0 8px; padding: 8px 14px; background: #2563eb; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 500; }
+    .links a:hover { background: #1e40af; }
+    footer { text-align:center; font-size:.9rem; margin-top:3rem; color:#555; }
+    a.no-underline {
+      text-decoration: none;
+      color: #2563eb;       /* blu coerente con il resto */
+      font-weight: 500;
+    }
+    a.no-underline:hover {
+      text-decoration: underline; /* opzionale: appaiono sottolineati solo al passaggio del mouse */
+    }
+    
+/* --- MOBILE TWEAKS --- */
+@media (max-width: 600px) {
+  body { padding: 1.2rem; }
+
+  /* Header impilato e centrato */
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+  }
+  header img {
+    width: 110px;
+    height: 110px;
+    border-radius: 10px;
+  }
+  h1 { font-size: 1.6rem; margin: 0; }
+  h2 { font-size: 1.1rem; }
+
+  /* Pulsanti navigazione più comodi al tap */
+  nav { margin-top: .25rem; }
+  nav a {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 10px 14px;
+    border-radius: 8px;
+  }
+
+  /* Link social in fondo */
+  .links { margin-top: 1.2rem; }
+  .links a {
+    display: inline-block;
+    margin: 6px 6px 0 0;
+    padding: 10px 14px;
+    border-radius: 8px;
+  }
+
+  /* Testo più leggibile */
+  p, li { font-size: 0.98rem; line-height: 1.6; }
+
+  /* Evita righe troppo lunghe (es. indirizzi) */
+  #contact p, a { overflow-wrap: anywhere; }
+
+  /* Footer più compatto */
+  footer { margin-top: 2rem; font-size: .85rem; }
+}
+
+    p, li {
+    text-align: justify;
+  }
+    
+  </style>
+</head>
+<body>
+  
+  <!-- Header con foto, nome e navigazione -->
+  <header>
+    <img src="me.jpg" alt="Andrea Panebianco">
+    <div>
+      <h1>Andrea Panebianco</h1>
+      <p>Ph.D. Student in <a href="https://www.unipa.it/dipartimenti/ingegneria/dottorati/informationandcommunicationtechnologies/en/index.html" target="_blank" class="no-underline">Information and Communication Technologies</a><br>
+        <a href="https://www.unipa.it/dipartimenti/ingegneria/en/index.html" target="_blank" class="no-underline">Department of Engineering</a>, 
+        <a href="https://www.unipa.it/mobilita/en/" target="_blank" class="no-underline">University of Palermo</a>, Palermo, Italy<br>
+        Affiliated with the <a href="https://www.cnit.it/en/" target="_blank" class="no-underline">CNIT</a> Catania Research Unit, Catania, Italy
+      </p>
+      <nav>
+        <a href="publications.html">Publications</a>
+        <a href="cv.html">CV</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:andrea.panebianco@unipa.it" target="_blank" class="no-underline">andrea.panebianco@unipa.it</a></p>
+    <p>Office: <a href="http://tellab-riltus.dieei.unict.it/" target="_blank" class="no-underline">Laboratorio RILTUS</a>, Polo Tecnologico (Technology Park), Via S. Sofia 102, 95123 Catania, Italy</p>
+  </section>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a Ph.D. student in <a href="https://www.unipa.it/dipartimenti/ingegneria/dottorati/informationandcommunicationtechnologies/en/index.html" target="_blank" class="no-underline">Information and Communication Technologies</a> at the <a href="https://www.unipa.it/mobilita/en/" target="_blank" class="no-underline">University of Palermo</a>, Palermo, Italy. 
+      My research focuses on the design of energy-efficient and adaptive communication protocols for the <strong>Internet of Underwater Things (IoUT)</strong>. 
+      I received my Bachelor’s degree in <a href="https://www.dieei.unict.it/corsi/l-8-ele" target="_blank" class="no-underline">Electronic Engineering</a> in March 2019 and my Master’s degree in <a href="https://www.dieei.unict.it/en/courses/lm-27" target="_blank" class="no-underline">Telecommunication Engineering</a> in October 2022, both from the <a href="https://www.unict.it/en" target="_blank" class="no-underline">University of Catania</a>, Catania, Italy. 
+      In 2023, I was honored with the <strong>Francesco Carassa Award</strong>, awarded during the <a href="https://www.gtti.it/" target="_blank" class="no-underline">Italian National Group on Telecommunications and Information Theory (GTTI)</a> Annual Meeting, in recognition of the best presentation and publication.
+      Beyond underwater acoustic communications, my work explores <strong>Multi-Armed Bandit (MAB) and Deep Reinforcement Learning (DRL) algorithms</strong> for reliable and resource-constrained <strong>Internet of Things (IoT)</strong> systems.
+    </p>
+
+  </section>
+
+  <!-- Research Interests -->
+  <section id="research">
+    <h2>Research Interests</h2>
+    <ul>
+      <li>Underwater Acoustic Communications</li>
+      <li>Adaptive Modulation and Power Control</li>
+      <li>Age-of-Information–aware Feedback Scheduling</li>
+      <li>Multi-Armed Bandit Algorithms and Online Learning</li>
+      <li>Deep Reinforcement Learning for Resource Allocation</li>
+      <li>Energy-Efficient and Reliable Communication Protocols</li>
+    </ul>
+  </section>
+
+  <!-- Links esterni -->
+  <div class="links">
+    <a href="https://orcid.org/0009-0002-4218-2167" target="_blank">ORCID</a>
+    <a href="https://scholar.google.com/citations?user=Wkx_56QAAAAJ&hl=en" target="_blank">Google Scholar</a>
+    <a href="https://www.linkedin.com/in/andrea-panebianco-70b11b176" target="_blank">LinkedIn</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Andrea Panebianco
+  </footer>
+</body>
+</html>
