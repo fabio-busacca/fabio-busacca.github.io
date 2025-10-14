@@ -61,6 +61,37 @@ header h3.subtitle {
   .container h2 { font-size: 1.1rem; }
   .container p, .container li { font-size: 0.98rem; line-height: 1.6; }
 }
+
+
+/* === Topbar mobile-first scrollable === */
+nav.topbar {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav.topbar a {
+  flex: 0 0 auto; /* auto-width buttons for scrolling on small screens */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* === Desktop enhancement: equal-width buttons === */
+@media (min-width: 768px) {
+  nav.topbar {
+    justify-content: stretch;
+  }
+  nav.topbar a {
+    flex: 1 1 0; /* distribute evenly across full width */
+  }
+}
 </style>
 </head>
 <body>

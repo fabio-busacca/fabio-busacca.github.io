@@ -63,7 +63,38 @@ header h3.subtitle {
 }
 
 .container header p { text-align: center; }
-footer { margin-top: 1.5rem; }</style>
+footer { margin-top: 1.5rem; }
+
+/* === Topbar mobile-first scrollable === */
+nav.topbar {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+nav.topbar a {
+  flex: 0 0 auto; /* auto-width buttons for scrolling on small screens */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* === Desktop enhancement: equal-width buttons === */
+@media (min-width: 768px) {
+  nav.topbar {
+    justify-content: stretch;
+  }
+  nav.topbar a {
+    flex: 1 1 0; /* distribute evenly across full width */
+  }
+}
+</style>
 </head>
 <body>
 <nav class="topbar">
