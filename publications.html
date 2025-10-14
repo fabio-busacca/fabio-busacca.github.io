@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Fabio Busacca — Publications</title>
+<style>
+/* === Global Reset & Layout === */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+html, body { width: 100%; margin: 0; padding: 0; }
+body { background:#f9fafb; color:#111; padding-top: 75px; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; }
+
+/* Fixed Top Bar (segmented) */
+nav.topbar {
+  position: fixed; top: 0; left: 0; width: 100%;
+  background: #0078bd; display: flex; justify-content: center; align-items: center;
+  padding: 0; margin: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;
+}
+nav.topbar a {
+  flex: 1; text-align: center; color: #fff; font-weight: 600;
+  padding: 0.8rem 1rem; text-decoration: none;
+  border-left: 1px solid #005f94; transition: background 0.2s;
+}
+nav.topbar a:first-child { border-left: none; }
+nav.topbar a:hover { background: #005f94; }
+
+/* Centered content column */
+.container {
+  width: min(95%, 1200px);
+  margin-inline: auto;
+  padding: 2rem 0;
+  text-align: center;
+}
+.container header { display: flex; flex-direction: column; align-items: center; gap: 1rem; margin-bottom: 2rem; }
+.container header img { width: 140px; height: 140px; object-fit: cover; border-radius: 8px; border: 2px solid #ddd; display:block; }
+.container h1 { font-size: 2.2rem; margin: 0 0 .3rem 0; }
+.container h2 { margin-top: 2rem; border-bottom: 2px solid #e5e7eb; padding-bottom: .3rem; }
+.container p, .container li { text-align: left; line-height: 1.6; }
+
+/* Links */
+a.no-underline { text-decoration: none; color: #0078bd; font-weight: 500; }
+a.no-underline:hover { text-decoration: underline; }
+
+/* Action buttons (ORCID/Scholar/LinkedIn) */
+.links { text-align: center; margin-top: 2rem; }
+.links a { display:inline-block; margin:0 8px; padding:8px 14px; background:#0078bd; color:#fff; border-radius:6px; text-decoration:none; font-weight:600; }
+.links a:hover { background:#005f94; }
+
+/* Subtitle styling (publications page) */
+header h3.subtitle {
+  font-size: 1.4rem; font-weight: 500; color: #374151; margin-top: .4rem; text-align: center;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .container { width: min(95%, 1200px); padding: 1.2rem 0; }
+  .container h1 { font-size: 1.6rem; margin: 0; }
+  .container h2 { font-size: 1.1rem; }
+  .container p, .container li { font-size: 0.98rem; line-height: 1.6; }
+}
+</style>
+</head>
+<body>
+<nav class="topbar">
+<a href="index.html">Home</a>
+<a href="publications.html">Publications</a>
+<a href="teaching.html">Teaching</a>
+<a href="students.html">Students</a>
+<a href="service.html">Professional Service</a>
+<a href="cv.html">CV</a>
+</nav>
+<div class="container">
+<header>
+<img alt="Fabio Busacca" src="me.png"/>
+<div>
+<h1>Fabio Busacca</h1>
+<h3 class="subtitle">Publications</h3>
+</div>
+</header>
+<section>
+<h2>Journal Papers</h2>
+<ul>
+<li><strong>Busacca, F.</strong>, Faraci, G., Grasso, C., Palazzo, S., &amp; Schembra, G. (2021). <a class="no-underline" href="https://doi.org/10.1016/j.comnet.2021.108330" target="_blank">Designing a multi-layer edge-computing platform for energy-efficient and delay-aware offloading in vehicular networks</a>. <em>Computer Networks, 198, 108330</em>.</li><li>Brincat, A. A., <strong>Busacca, F.</strong>, Galluccio, L., Mertens, J. S., Musumeci, A., Palazzo, S., &amp; Panebianco, A. (2022). <a class="no-underline" href="https://doi.org/10.1016/j.comcom.2022.05.032" target="_blank">An integrated acoustic/LoRa system for transmission of multimedia sensor data over an Internet of Underwater Things</a>. <em>Computer Communications, 192, 132–142</em>.</li><li><strong>Busacca, F.</strong>, Grasso, C., Palazzo, S., &amp; Schembra, G. (2022). <a class="no-underline" href="https://doi.org/10.1109/TGCN.2022.3187674" target="_blank">A smart road side unit in a microeolic box to provide edge computing for vehicular applications</a>. <em>IEEE Transactions on Green Communications and Networking, 7(1), 194–210</em>.</li><li><strong>Busacca, F.</strong>, Galluccio, L., &amp; Palazzo, S. (2022). <a class="no-underline" href="https://doi.org/10.1016/j.comnet.2022.109453" target="_blank">A marketplace model for drone-assisted edge computing in 5G scenarios</a>. <em>Computer Networks, 219, 109453</em>.</li><li><strong>Busacca, F.</strong>, Mangione, S., Palazzo, S., Restuccia, F., &amp; Tinnirello, I. (2024). <a class="no-underline" href="https://doi.org/10.1016/j.comnet.2024.110194" target="_blank">SDR-LoRa, an open-source, full-fledged implementation of LoRa on Software-Defined-Radios: Design and potential exploitation</a>. <em>Computer Networks, 241, 110194</em>.</li><li><strong>Busacca, F.</strong>, Galluccio, L., Palazzo, S., &amp; Panebianco, A. (2024). <a class="no-underline" href="https://doi.org/10.1016/j.comnet.2024.110557" target="_blank">A comparative analysis of predictive channel models for real shallow water environments</a>. <em>Computer Networks, 250, 110557</em>.</li><li><strong>Busacca, F.</strong>, Galluccio, L., Palazzo, S., Panebianco, A., Qi, Z., &amp; Pompili, D. (2024). <a class="no-underline" href="https://doi.org/10.1016/j.comnet.2024.110679" target="_blank">Adaptive versus predictive techniques in underwater acoustic communication networks</a>. <em>Computer Networks, 252, 110679</em>.</li><li><strong>Busacca, F.</strong>, Galluccio, L., Palazzo, S., Panebianco, A., &amp; Raftopoulos, R. (2025). <a class="no-underline" href="https://doi.org/10.1109/OJCOMS.2025.3542184" target="_blank">AMUSE: A Multi-Armed Bandit Framework for Energy-Efficient Modulation Adaptation in Underwater Acoustic Networks</a>. <em>IEEE Open Journal of the Communications Society</em>.</li><li><strong>Busacca, F.</strong>, Palazzo, S., Raftopoulos, R., &amp; Schembra, G. (2025). <a class="no-underline" href="https://doi.org/10.1109/TNSM.2025.3577726" target="_blank">MANTRA: A Distributed MAB-Based Multi-Agent Framework for Latency-and Energy-Aware Offloading in Vehicular Networks</a>. <em>IEEE Transactions on Network and Service Management</em>.</li><li><strong>Busacca, F.</strong>, Puligheddu, C., Raviglione, F., Rusca, R., Casetti, C., Chiasserini, C. F., &amp; Palazzo, S. (2025). <a class="no-underline" href="https://doi.org/10.1109/TMC.2025.3617324" target="_blank">Target Wake Time Scheduling for Time-sensitive and Energy-efficient Wi-Fi Networks</a>. <em>IEEE Transactions on Mobile Computing</em>.</li>
+</ul>
+</section>
+<section>
+<h2>Conference Papers</h2>
+<ul>
+<li><strong>Busacca, F.</strong>, Cirino, C., Faraci, G., Grasso, C., Palazzo, S., &amp; Schembra, G. (2020). <a class="no-underline" href="https://doi.org/10.1109/MedComNet49392.2020.9191474" target="_blank">Multi-layer offloading at the edge for vehicular networks</a>. <em>2020 Mediterranean Communication and Computer Networking Conference (MedComNet), 1–8. IEEE</em>.</li><li><strong>Busacca, F.</strong>, Galluccio, L., &amp; Palazzo, S. (2020). <a class="no-underline" href="https://doi.org/10.1109/INFOCOMWKSHPS50562.2020.9162708" target="_blank">Drone-assisted edge computing: a game-theoretical approach</a>. <em>IEEE INFOCOM 2020 Workshops (INFOCOM WKSHPS), 671–676. IEEE</em>.</li><li><strong>Busacca, F.</strong>, Galluccio, L., Mertens, J. S., Orto, D., Palazzo, S., &amp; Quattropani, S. (2020). <a class="no-underline" href="https://dl.acm.org/doi/10.1145/3411276.3412186" target="_blank">An experimental testbed of an Internet of Underwater Things</a>. <em>WiNTECH ’20: 14th International Workshop on Wireless Network Testbeds, Experimental Evaluation &amp; Characterization, 95–102. ACM</em>.</li><li><strong>Busacca, F.</strong>, Mangione, S., Tinnirello, I., Palazzo, S., &amp; Restuccia, F. (2022). <a class="no-underline" href="https://doi.org/10.1145/3556564.3558239" target="_blank">SDR-LoRa: Dissecting and implementing LoRa on software-defined radios to advance experimental IoT research</a>. <em>WiNTECH ’22: 16th ACM Workshop on Wireless Network Testbeds, Experimental Evaluation &amp; CHaracterization, 24–31. ACM</em>.</li><li><strong>Busacca, F.</strong>, Palazzo, S., Raftopoulos, R., &amp; Schembra, G. (2023). <a class="no-underline" href="https://doi.org/10.1109/NETSOFT57336.2023.10175450" target="_blank">MANTRA: An edge-computing framework based on multi-armed bandit for latency- and energy-aware job offloading in vehicular networks</a>. <em>2023 IEEE 9th International Conference on Network Softwarization (NetSoft), 143–151. IEEE</em>.</li><li><strong>Busacca, F.</strong>, Galluccio, L., Palazzo, S., &amp; Panebianco, A. (2023). <a class="no-underline" href="https://doi.org/10.1109/ICCWorkshops57953.2023.10283721" target="_blank">Underwater acoustic channel models for SNR prediction in a real shallow water environment</a>. <em>2023 IEEE International Conference on Communications Workshops (ICC Workshops), 721–726. IEEE</em>.</li><li>Rodio, A., Neglia, G., <strong>Busacca, F.</strong>, Mangione, S., Palazzo, S., Restuccia, F., &amp; Tinnirello, I. (2023). <a class="no-underline" href="https://doi.org/10.1109/WPMC59531.2023.10338845" target="_blank">Federated learning with packet losses</a>. <em>2023 26th International Symposium on Wireless Personal Multimedia Communications (WPMC), 1–6. IEEE</em>.</li><li>Scarvaglieri, A., Palazzo, S., &amp; <strong>Busacca, F</strong>.. (2023). <a class="no-underline" href="https://doi.org/10.1145/3603166.3632564" target="_blank">A lightweight, fully-distributed AI framework for energy-efficient resource allocation in LoRa networks</a>. <em>IEEE/ACM 16th International Conference on Utility and Cloud Computing, 1–6.</em>.</li><li>Puligheddu, C., <strong>Busacca, F.</strong>, Rusca, R., Raviglione, F., Casetti, C., Chiasserini, C. F., &amp; Palazzo, S. (2024). <a class="no-underline" href="https://doi.org/10.1109/PIMRC59610.2024.10817339" target="_blank">Target wake time scheduling for time-sensitive networking in the industrial IoT</a>. <em>2024 IEEE 35th International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC), 1–7. IEEE</em>.</li><li><strong>Busacca, F.</strong>, Galluccio, L., Palazzo, S., Panebianco, A., &amp; Scarvaglieri, A. (2024). <a class="no-underline" href="https://doi.org/10.1109/ICCWorkshops59551.2024.10615825" target="_blank">Balancing Optimization for Underwater Network Cost Effectiveness (BOUNCE): a Multi-Armed Bandit Solution</a>. <em>2024 IEEE International Conference on Communications Workshops (ICC Workshops), 1340–1345. IEEE</em>.</li><li><strong>Busacca, F.</strong>, Palazzo, S., Raftopoulos, R., &amp; Schembra, G. (2024). <a class="no-underline" href="https://doi.org/10.1109/INFOCOMWKSHPS61880.2024.10635171" target="_blank">MAD-FELLOWS: A Multi-Armed Bandit Framework for Energy-Efficient, Low-Latency Job Offloading in Robotic Networks</a>. <em>IEEE INFOCOM 2024 Workshops (INFOCOM WKSHPS), 1–6. IEEE</em>.</li><li><strong>Busacca, F.</strong>, Palazzo, S., Raftopoulos, R., &amp; Schembra, G. (2024). <a class="no-underline" href="https://doi.org/10.1109/ICC51166.2024.10623024" target="_blank">MARBLE: Multi-Player Multi-Armed Bandit for Lightweight and Efficient Job Offloading in UAV-Based Mobile Networks</a>. <em>ICC 2024 — IEEE International Conference on Communications, 4936–4941. IEEE</em>.</li><li><strong>Busacca, F.</strong>, Galluccio, L., Palazzo, S., Panebianco, A., &amp; Raftopoulos, R. (2024). <a class="no-underline" href="https://doi.org/10.1109/ICC51166.2024.10623120" target="_blank">Adaptive modulation in underwater acoustic networks (AMUSE): A multi-armed bandit approach</a>. <em>ICC 2024 — IEEE International Conference on Communications, 2336–2341. IEEE</em>.</li><li><strong>Busacca, F.</strong>, Mangione, S., Neglia, G., Tinnirello, I., Palazzo, S., &amp; Restuccia, F. (2024). <a class="no-underline" href="https://doi.org/10.1109/MASS62177.2024.00047" target="_blank">FedLoRa: IoT Spectrum Sensing Through Fast and Energy-Efficient Federated Learning in LoRa Networks</a>. <em>2024 IEEE 21st International Conference on Mobile Ad-Hoc and Smart Systems (MASS), 295–303. IEEE</em>.</li><li>Scarvaglieri, A., Panebianco, A., &amp; <strong>Busacca, F</strong>.. (2024). <a class="no-underline" href="https://doi.org/10.1109/GLOBECOM52923.2024.10901589" target="_blank">MAGELLAN: A distributed MAB-based algorithm for Energy-Fair and Reliable Routing in Multi-Hop LoRa networks</a>. <em>GLOBECOM 2024 — IEEE Global Communications Conference, 2250–2255. IEEE</em>.</li><li><strong>Busacca, F.</strong>, Galluccio, L., Palazzo, S., Panebianco, A., &amp; Raftopoulos, R. (2025). <a class="no-underline" href="https://doi.org/10.1109/WCNC61545.2025.10978174" target="_blank">A Distributed Multi-Armed Bandit Approach for Modulation Adaptation in Underwater Networks</a>. <em>2025 IEEE Wireless Communications and Networking Conference (WCNC), 1–6. IEEE</em>.</li><li>Conserva, F., <strong>Busacca, F.</strong>, Puligheddu, C., Bizzarri, S., Fodrini, M., Cuozzo, G., &amp; Marini, R. (2025). <a class="no-underline" href="https://doi.org/10.1109/ICCWorkshops67674.2025.11162139" target="_blank">Bridging Research and Standardization: Innovations and Methodology for 6G Standard Contributions</a>. <em>ICC 2025 Workshops — Path towards 6G Standardization and Research Vision</em>.</li><li><strong>Busacca, F.</strong>, Galluccio, L., Palazzo, S., Panebianco, A., &amp; Raftopoulos, R. (2025). <a class="no-underline" href="https://doi.org/10.1109/ICCWorkshops67674.2025.11162283" target="_blank">POSEIDON: A multi-armed bandit framework for Power and mOdulation SchEme adaptatIon in unDerwater acOustic Networks</a>. <em>2025 IEEE International Conference on Communications Workshops (ICC Workshops), 2045–2050. IEEE</em>.</li><li>Scarvaglieri, A., &amp; <strong>Busacca, F</strong>.. (2025). <a class="no-underline" href="https://doi.org/10.1109/ICC61820.2025.11192867" target="_blank">FULMINA: A Fast Multi-Armed Bandit Approach for Optimal SF Allocation in LoRa IoT Networks</a>. <em>ICC 2025 — IEEE International Conference on Communications, 5228–5233. IEEE</em>.</li>
+</ul>
+</section>
+<footer>© 2025 Fabio Busacca</footer>
+</div>
+</body>
+</html>
