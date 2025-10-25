@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
@@ -17,7 +16,8 @@ body { background:#f9fafb; color:#111; padding-top: 75px; font-family: system-ui
 nav.topbar {
   position: fixed; top: 0; left: 0; width: 100%;
   background: #0078bd; display: flex; justify-content: center; align-items: center;
-  padding: 0; margin: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1); overflow: hidden;
+  padding: 0; margin: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  /* no overflow hidden — allows horizontal scroll on mobile */
 }
 nav.topbar a {
   flex: 1; text-align: center; color: #fff; font-weight: 600;
@@ -49,7 +49,7 @@ a.no-underline:hover { text-decoration: underline; }
 .links a { display:inline-block; margin:0 8px; padding:8px 14px; background:#0078bd; color:#fff; border-radius:6px; text-decoration:none; font-weight:600; }
 .links a:hover { background:#005f94; }
 
-/* Subtitle styling (publications page) */
+/* Subtitle styling */
 header h3.subtitle {
   font-size: 1.4rem; font-weight: 500; color: #374151; margin-top: .4rem; text-align: center;
 }
@@ -67,30 +67,72 @@ header h3.subtitle {
 .course-list li { margin: 0.5rem 0 0.75rem; line-height: 1.4; }
 .course-list li strong { font-weight: 700; }
 .course-list .meta { font-size: 0.95rem; opacity: 0.85; }
+
+/* === Topbar mobile-first scrollable (patch) === */
+nav.topbar {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  -webkit-overflow-scrolling: touch;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+}
+nav.topbar a {
+  flex: 0 0 auto; /* natural width for scrolling on phones */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === Desktop enhancement: equal-width buttons === */
+@media (min-width: 768px) {
+  nav.topbar { justify-content: stretch; }
+  nav.topbar a { flex: 1 1 0; } /* distribute evenly across full width */
+}
 </style>
 </head>
 <body>
 <nav class="topbar">
-<a href="index.html">Home</a>
-<a href="publications.html">Publications</a>
-<a href="teaching.html">Teaching</a>
-<a href="students.html">Students</a>
-<a href="service.html">Professional Service</a>
-<a href="cv.html">CV</a>
+  <a href="index.html">Home</a>
+  <a href="publications.html">Publications</a>
+  <a href="teaching.html">Teaching</a>
+  <a href="students.html">Students</a>
+  <a href="service.html">Professional Service</a>
+  <a href="cv.html">CV</a>
 </nav>
 <div class="container">
-<header>
-<img alt="Fabio Busacca" src="me.png"/>
-<div>
-<h1>Fabio Busacca</h1>
-<h3 class="subtitle">Teaching</h3><section><h2>Courses</h2><ol class="course-list"><li data-aymax="2025"><strong>IoT and Big Data: Sensing, Compression &amp; Communication</strong><br/><span class="meta">AY 2023/2024, 2024/2025 · M.Sc. in Communications Engineering · University of Catania</span></li><li data-aymax="2025"><strong>Big Data Sensing, Compression &amp; Communication</strong><br/><span class="meta">AY 2023/2024, 2024/2025 · M.Sc. in Data Science · University of Catania</span></li><li data-aymax="2023"><strong>Digital Communications</strong><br/><span class="meta">AY 2022/2023 · B.Sc. in Computer Engineering · University of Catania</span></li></ol></section>
-</div>
-</header>
-<section>
-</section>
-<section>
-</section>
-<footer>© 2025 Fabio Busacca</footer>
+  <header>
+    <img alt="Fabio Busacca" src="me.png"/>
+    <div>
+      <h1>Fabio Busacca</h1>
+      <h3 class="subtitle">Teaching</h3>
+
+      <section>
+        <h2>Courses</h2>
+        <ol class="course-list">
+          <li data-aymax="2025">
+            <strong>IoT and Big Data: Sensing, Compression &amp; Communication</strong><br/>
+            <span class="meta">AY 2023/2024, 2024/2025 · M.Sc. in Communications Engineering · University of Catania</span>
+          </li>
+          <li data-aymax="2025">
+            <strong>Big Data Sensing, Compression &amp; Communication</strong><br/>
+            <span class="meta">AY 2023/2024, 2024/2025 · M.Sc. in Data Science · University of Catania</span>
+          </li>
+          <li data-aymax="2023">
+            <strong>Digital Communications</strong><br/>
+            <span class="meta">AY 2022/2023 · B.Sc. in Computer Engineering · University of Catania</span>
+          </li>
+        </ol>
+      </section>
+    </div>
+  </header>
+
+  <section></section>
+  <section></section>
+  <footer>© 2025 Fabio Busacca</footer>
 </div>
 </body>
 </html>
