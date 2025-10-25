@@ -17,7 +17,7 @@ nav.topbar {
   position: fixed; top: 0; left: 0; width: 100%;
   background: #0078bd; display: flex; justify-content: center; align-items: center;
   padding: 0; margin: 0; z-index: 1000; box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  /* removed overflow:hidden to allow horizontal scroll on mobile */
+  /* no overflow hidden — allows horizontal scroll on mobile */
 }
 nav.topbar a {
   flex: 1; text-align: center; color: #fff; font-weight: 600;
@@ -86,13 +86,7 @@ nav.topbar a {
   align-items: center;
   justify-content: center;
 }
-/* Subtle right-edge scroll cue */
-nav.topbar::after {
-  content: "";
-  position: absolute; top: 0; right: 0; height: 100%; width: 24px;
-  pointer-events: none;
-  background: linear-gradient(to left, rgba(0,0,0,0.12), rgba(0,0,0,0));
-}
+
 /* === Desktop enhancement: equal-width buttons === */
 @media (min-width: 768px) {
   nav.topbar { justify-content: stretch; }
